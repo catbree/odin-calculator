@@ -17,3 +17,16 @@ const operate = (a,b,operator) => {
             return divide(a,b);
     }
 };
+
+const calculatorDisplay = document.querySelector("#calculatorDisplay");
+calculatorDisplay.textContent = "0";
+const displayValue = calculatorDisplay;
+
+const allButtons = document.querySelectorAll("button");
+
+allButtons.forEach( button => {
+    button.addEventListener("click", () => {
+        console.log(`${button.id} was clicked`)
+        calculatorDisplay.textContent = button.textContent;
+    })
+})
