@@ -8,13 +8,13 @@ const divide = (a,b) => a / b;
 const operate = (a,b,operator) => {
     switch (operator) {
         case "+":
-            return add(a,b);
+            return parseFloat(add(a,b).toFixed(3));
         case "-":
-            return subtract(a,b);
+            return parseFloat(subtract(a,b).toFixed(3));
         case "x":
-            return multiply(a,b);
+            return parseFloat(multiply(a,b).toFixed(3));
         case "/":
-            return divide(a,b);
+            return parseFloat(divide(a,b).toFixed(3));
     }
 };
 
@@ -115,96 +115,3 @@ allButtons.forEach( button => {
 
     })
 })
-
-// if (firstValue == null && operator == "") {
-//     allButtons.forEach( button => {
-//         button.addEventListener("click", () => {
-//             if (button.textContent == "1" ||
-//                 button.textContent == "2" ||
-//                 button.textContent == "3" ||
-//                 button.textContent == "4" ||
-//                 button.textContent == "5" ||
-//                 button.textContent == "6" ||
-//                 button.textContent == "7" ||
-//                 button.textContent == "8" ||
-//                 button.textContent == "9" ||
-//                 button.textContent == "0") {
-//                 console.log(`First value being inputted`);
-//                 calculatorDisplay.textContent += button.textContent;
-//                 firstValue = calculatorDisplay.textContent;
-//             } 
-//             else if (button.textContent == "÷" ||
-//                      button.textContent == "×" ||
-//                      button.textContent == "-" ||
-//                      button.textContent == "+") {
-//                         console.log(`${button.id} was clicked,Operator inputted`);
-//                         operator = button.textContent;
-//                     }
-//             else {
-//                 return;
-//             }
-
-//         })
-//     })
-// }
-
-// if (firstValue!==null && operator!=="") {
-//     allButtons.forEach( button => {
-//         button.addEventListener("click", () => {
-//             if(secondValue==null) {
-//                 console.log(`second value is null!`)
-//             }
-//         })
-//     })
-// }
-
-
-
-
-
-// allButtons.forEach( button => {
-//     button.addEventListener("click", () => {
-        
-//         if ((selectedOperator != "" && selectedValue != "0") && 
-//                   (button.textContent == "1" ||
-//                   button.textContent == "2" ||
-//                   button.textContent == "3" ||
-//                   button.textContent == "4" ||
-//                   button.textContent == "5" ||
-//                   button.textContent == "6" ||
-//                   button.textContent == "7" ||
-//                   button.textContent == "8" ||
-//                   button.textContent == "9" ||
-//                   button.textContent == "0")) {
-//                     console.log(`Next value is being inputted`);
-//                     calculatorDisplay.textContent += button.textContent;
-//                   }
-//         else if (button.textContent == "1" ||
-//             button.textContent == "2" ||
-//             button.textContent == "3" ||
-//             button.textContent == "4" ||
-//             button.textContent == "5" ||
-//             button.textContent == "6" ||
-//             button.textContent == "7" ||
-//             button.textContent == "8" ||
-//             button.textContent == "9" ||
-//             button.textContent == "0") {
-//                 console.log(`${button.id} was clicked`);
-//                 calculatorDisplay.textContent += button.textContent;
-//                 selectedValue = calculatorDisplay.textContent;
-//             }
-        
-//         else if (button.textContent == "÷" ||
-//                  button.textContent == "×" ||
-//                  button.textContent == "-" ||
-//                  button.textContent == "+") {
-//                     console.log(`${button.id} was clicked`);
-//                     selectedOperator = button.textContent;
-//                  }
-//         else if (button.textContent == "=") {
-//             console.log(`${button.id} was clicked`);
-//             calculatorDisplay.textContent = operate(+selectedValue,+calculatorDisplay.textContent,selectedOperator);
-//         }
-        
-//     })
-//})
