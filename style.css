@@ -1,3 +1,61 @@
 h1 {
     color: orangered;
 }
+
+#calculator {
+    box-sizing: border-box;
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+}
+
+#calculatorDisplay {
+    box-sizing: border-box;
+    width: auto;
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+
+#calculatorInput {
+    box-sizing: border-box;
+    width: auto;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/* #inputColumnOne, #inputColumnTwo, #inputColumnThree {
+    display: flex;
+} */
+
+#inputColumnOne, #inputColumnTwo, #inputColumnThree{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#inputColumnOne {
+    flex-grow: 3
+}
+
+#inputColumnTwo, #inputColumnThree {
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+button {
+    width: 64px;
+    height: 64px;
+}
+
+button#zeroButton {
+    width: 142px;
+}
+
+button#operatorButton {
+    height: 140px;
+}
