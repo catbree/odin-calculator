@@ -111,6 +111,12 @@ allButtons.forEach( button => {
             operator = "";
         }
 
+        if(button.textContent=="AC") {
+            firstValue = null;
+            operator = "";
+            secondValue = null;
+            calculatorDisplay.textContent = "";
+        }
 
 
     })

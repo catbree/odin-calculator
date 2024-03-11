@@ -1,5 +1,8 @@
-h1 {
-    color: orangered;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
 }
 
 #calculator {
@@ -7,14 +10,21 @@ h1 {
     width: 400px;
     height: auto;
     border: 1px solid black;
+    border-radius: 4px;
+    background-color: #F7FDF7;
+
+    border:solid 2px #9C865B;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
 }
 
 #calculatorDisplay {
     box-sizing: border-box;
     width: auto;
     height: 80px;
-    margin: 12px 12px 0px 12px;
-    border: 1px solid black;
+    margin: 16px 16px 0px 16px;
 
     padding-top: 8px;
     padding-bottom: 8px;
@@ -23,6 +33,14 @@ h1 {
 
     text-align: right;
     font-size: 48px;
+    font-family: "Permanent Marker", "Roboto";
+    color: #424445;
+
+    border:solid 2px #9C865B;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
 }
 
 #calculatorInput {
@@ -33,6 +51,7 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    
 }
 
 #inputColumnOne, #inputColumnTwo, #inputColumnThree{
@@ -56,6 +75,18 @@ h1 {
 button {
     width: 64px;
     height: 64px;
+
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+
+    border:solid 2px #9C865B;
+
+    font-family: "Permanent Marker", "Roboto";
+    font-size: 21px;
+    background-color: #EFCB87;
+    color: #41403E;
 }
 
 button#zeroButton {
@@ -64,4 +95,8 @@ button#zeroButton {
 
 button#operateButton, button#acButton {
     height: 140px;
+    background-color: #C13925;
+    color: white;
+    border: solid 2px #A83322;
+
 }
